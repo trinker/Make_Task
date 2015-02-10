@@ -1,0 +1,21 @@
+---
+title: "Apple and Microsoft Report"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+---
+
+```{r, echo=FALSE,message=FALSE}
+pacman::p_load(quantmod)
+invisible(getSymbols(c('AAPL', 'MSFT')))
+invisible(dev.off())
+```
+
+```{r, echo=FALSE}
+chartSeries(AAPL, theme="white", type="candlestick", TA=c(addVo(),addBBands()))
+invisible(dev.off())
+chartSeries(MSFT, theme="white", type="candlestick", TA=c(addVo(),addBBands()))
+invisible(dev.off())
+```
