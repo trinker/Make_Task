@@ -1,5 +1,5 @@
 # Make_Task
-A minimal Example for Scheduling Windows Tasks with R
+A Minimal Example for Scheduling Windows Tasks with R
 
 Also see:
   - [Blog Post](https://trinkerrstuff.wordpress.com/2015/02/11/scheduling-r-tasks-via-windows-task-scheduler/)    
