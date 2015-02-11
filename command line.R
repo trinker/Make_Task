@@ -1,6 +1,6 @@
 recurrence <- "once"
 task_name <- "MyTask"
-bat_loc <- "C:\\Users\\Tyer\\Desktop\\Make_Task\\task.bat"
+bat_loc <- "C:\\Users\\Tyler\\Desktop\\Make_Task\\task.bat"
 time <- "00:21"
 
 system(sprintf("schtasks /create /sc %s /tn %s /tr \"%s\" /st %s", recurrence, task_name, bat_loc, time))
