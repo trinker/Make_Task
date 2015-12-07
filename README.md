@@ -20,3 +20,9 @@ makes strong assumptions about where R is located and if it's on the user's path
 @echo off
 "C:\R\R-3.2.2\bin\x64\R.exe" CMD BATCH C:\Users\Tyler\Desktop\Make_Task\task.R
 ```
+
+If the path of your R file has spaces in it, make sure to enclose the path in quotes otherwise the code won't run:
+```
+@echo off
+"C:\R\R-3.2.2\bin\x64\R.exe" CMD BATCH "C:\Users\Tyler\Desktop\Some Other Path\task.R"
+```
